@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./scss/style.css"> 
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="./img/site.webmanifest">
+  <title>Bootstrap Example</title>
+</head>
+
+<body>
+
+  
+  <nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">      
+        <img src="./img/Logo1.png" width="80" height="50" class="d-inline-block align-top" alt="Your Logo" class="img-thumbnail">        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#aboutUs">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.jamesedition.com/cars" target="_blank" class="nav-link active">World</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container-fluid mt-0 p-0 bg-dark text-dark text-center bg-white">
+    <video class="img-fluid d-block w-100" controls autoplay>
+      <source src="./img/Lights.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <h1 id="aboutUs" class="display-5 mt-3 fw-bold">About Us</h1><br>
+    <p class="w-50 mx-auto ">Bonda Luxury Cars epitomizes the pinnacle of automotive opulence, seamlessly blending cutting-edge technology with unparalleled craftsmanship to redefine the essence of luxury on four wheels. Renowned for its commitment to excellence, Bonda crafts vehicles that transcend the ordinary, embodying a fusion of elegance, performance, and innovation.</p>
+    <p class="w-50 mx-auto ">Each model is a testament to meticulous attention to detail, where precision engineering meets the artistry of automotive design. Bonda's fleet showcases an exclusive collection of vehicles that cater to the discerning taste of those who demand nothing but the extraordinary.</p>
+    <p class="w-50 mx-auto ">From the sleek lines of the exterior to the sumptuous interiors adorned with bespoke materials, Bonda Luxury Cars epitomizes the epitome of automotive sophistication, offering a driving experience that transcends the boundaries of mere transportation, elevating it to a realm of unparalleled luxury and refinement.</p> 
+  </div>
+   
+
+  <div id="gallery" class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-slide="prev" data-bs-slide="next">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="./img/Lambo.jpg" class="d-block w-100" alt="Lamborghini">              
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/Ferrari.jpg" class="d-block w-100" alt="Ferrari">              
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/Porsche.jpg" class="d-block w-100" alt="Prosche">              
+            </div><
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/Aston.jpg" class="d-block w-100" alt="Aston">              
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/Mclaren.jpg" class="d-block w-100" alt="McLaren">              
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5 text-center">
+    <table class="table mx-auto border border-secondary border-opacity-50 rounded-1">
+      <thead>
+        <tr>
+          <th scope="col">#</th> 
+          <th scope="col">Car Model</th>
+          <th scope="col">Horsepower</th>
+          <th scope="col">Engine Type</th>
+          <th scope="col">Top Speed</th>
+          <th scope="col">Acceleration (0-60 mph)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Lamborghini Aventador</td>
+          <td>730 HP</td>
+          <td>V12</td>
+          <td>217 mph</td>
+          <td>2.9 seconds</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Ferrari F12 Berlinetta</td>
+          <td>730 HP</td>
+          <td>V12</td>
+          <td>211 mph</td>
+          <td>3.1 seconds</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Porsche 911 Turbo S</td>
+          <td>640 HP</td>
+          <td>Flat-6</td>
+          <td>205 mph</td>
+          <td>2.5 seconds</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Aston Martin DBS Superleggera</td>
+          <td>715 HP</td>
+          <td>V12</td>
+          <td>211 mph</td>
+          <td>3.4 seconds</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>McLaren 720S</td>
+          <td>710 HP</td>
+          <td>V8</td>
+          <td>212 mph</td>
+          <td>2.8 seconds</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div id="shop" class="bg-light py-5 mb-5">
+    <div class="container">
+      <h1 class="display-1 text-center mb-0">Shop</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasFilters">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title h5 fw-bold text-uppercase" id="offcanvasFiltersLabel">Filters</h2>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>      
+    </div>
+    <div class="d-flex justify-content-end mb-3">
+      <button type="button" class="btn btn-secondary me-auto d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters">Filter</button>
+      <form class="d-flex align-items-center">
+        <label for="selectSort" class="me-2">Sort by:</label>
+        <select class="form-select w-auto me-md-3" aria-label="Sort by:" id="selectSort">
+          <option value="name" selected>Name</option>
+          <option value="popularity">Popularity</option>
+          <option value="price">Price</option>
+          <option value="rating">Rating</option>
+        </select>
+      </form>
+      <div class="btn-group d-none d-md-inline-flex" role="group" aria-label="Change layout">
+        <button type="button" class="btn btn-outline-secondary active">
+          <span class="visually-hidden">Grid</span>
+          <i class="bi-grid"></i>
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+          <span class="visually-hidden">List</span>
+          <i class="bi-list"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-xxl-3 d-none d-lg-block">
+        <aside class="sticky-top pt-lg-3 pb-lg-5">
+          <div class="card">
+            <h2 class="card-header h5 fw-bold text-uppercase">Filters</h2>
+            <form class="card-body">
+              <fieldset class="mb-3">
+                <legend class="h5">On sale</legend>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switchSale">
+                  <label class="form-check-label" for="switchSale">Only show products on sale</label>
+                </div>
+              </fieldset>
+              
+              <fieldset class="mb-3">
+                <legend class="h5">Brand</legend>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkBrand1">
+                  <label class="form-check-label" for="checkBrand1">Lamborghini</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkBrand2">
+                  <label class="form-check-label" for="checkBrand2">Ferrari</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkBrand3">
+                  <label class="form-check-label" for="checkBrand3">Porsche</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkBrand4">
+                  <label class="form-check-label" for="checkBrand4">Aston</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkBrand5">
+                  <label class="form-check-label" for="checkBrand5">McLaren</label>
+                </div>
+              </fieldset>
+             
+              <fieldset class="mb-3">
+                <legend class="h5">Rating</legend>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkRating1">
+                  <label class="form-check-label" for="checkRating1">
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkRating2">
+                  <label class="form-check-label" for="checkRating2">
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkRating3">
+                  <label class="form-check-label" for="checkRating3">
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                    <i class="bi-star-fill"></i>
+                  </label>
+                </div>
+               
+              </fieldset>
+              <fieldset class="mb-3">
+                <legend class="h5">Price range</legend>
+                <div class="d-flex align-items-center">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="priceRangeMin">$</span>
+                    <input type="text" class="form-control" placeholder="Min" aria-label="Min" aria-describedby="priceRangeMin">
+                  </div>
+                  <span class="mx-1">-</span>
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="priceRangeMax">$</span>
+                    <input type="text" class="form-control" placeholder="Max" aria-label="Max" aria-describedby="priceRangeMax">
+                  </div>
+                </div>
+              </fieldset>
+              <button type="submit" class="btn btn-sm btn-primary">Apply filters</button>
+              <button type="reset" class="btn btn-sm btn-secondary">Reset</button>
+            </form>
+          </div>
+        </aside>
+      </div>      
+      
+      <div class="col-lg-8 col-xxl-9 pt-lg-3 mb-5">
+        <div class="row g-3 mb-4">
+          <div class="col-md-6 col-xxl-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="img/Lambo.jpg" alt="Product image" class="card-img-top">                
+              </div>
+              <div class="card-body position-relative">
+                <h2 class="h4"><a href="product.html" class="stretched-link">Aventador SvJ</a></h2>
+                <div class="text-uppercase fw-bold text-muted mb-1">Lamborghini</div>
+                <p class="mb-3">The Lamborghini Aventador SVJ (Super Veloce Jota) is a high-performance variant of the Aventador. It combines cutting-edge technology with extraordinary design. <br> The SVJ features a redesigned V12 engine, active aero, and carbon fiber parts. It's known for its impressive aerodynamics and an improved power-to-weight ratio of 1.98 kg/hp. <br> The SVJ has also made a name for itself by breaking the Nürburgring record with an official time of 6:44.97.</p>
+                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
+                  <i class="bi-check-circle"></i>
+                  In stock
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fs-3 fw-bold lh-1">$450.000</div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-primary me-2 js-addToCart">
+                      <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                    </button>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-secondary" id="addToWishlistDropdown1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                      <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown1">
+                        <h6 class="dropdown-header">Select wishlist</h6>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xxl-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="img/Ferrari.jpg" alt="Product image" class="card-img-top">
+                
+              </div>
+              <div class="card-body position-relative">
+                <h2 class="h4"><a href="product.html" class="stretched-link">F12 Berlinetta</a></h2>
+                <div class="text-uppercase fw-bold text-muted mb-1">Ferrari</div>
+                <p class="mb-3">The Ferrari F12 Berlinetta is a front-engine, rear-wheel-drive grand tourer produced by Italian automobile manufacturer Ferrari. It debuted at the 2012 Geneva Motor Show. <br> The F12 Berlinetta uses a naturally aspirated 6.3 litre Ferrari V12 engine, generating a power output of 740 PS (544 kW; 730 hp) at 8,250 rpm. <br> It was the most powerful Ferrari road car when it was launched. The car is known for its impressive aerodynamics and was replaced by the 812 Superfast in early 2017.</p>
+                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
+                  <i class="bi-check-circle"></i>
+                  In stock
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fs-3 fw-bold lh-1">$475.000</div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-primary me-2 js-addToCart">
+                      <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                    </button>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-secondary" id="addToWishlistDropdown2" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                      <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown2">
+                        <h6 class="dropdown-header">Select wishlist</h6>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-xxl-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="img/Porsche.jpg" alt="Product image" class="card-img-top">                
+              </div>
+              <div class="card-body position-relative">
+                <h2 class="h4"><a href="product.html" class="stretched-link">911 Turbo S</a></h2>
+                <div class="text-uppercase fw-bold text-muted mb-1">Porsche</div>
+                <p class="mb-3">The Porsche 911 Turbo S is a high-performance sports car. It's powered by a 3.75-liter boxer engine with two VTG turbochargers, delivering 478 kW (650 PS), which is 70 PS more than its predecessor. <br> The car can sprint from zero to 100 km/h in just 2.7 seconds with the Turbo-specific eight-speed PDK. It has a top speed of 330 km/h. <br> The 911 Turbo S is known for its incredible performance, comfort, and suitability for everyday use.</p>
+                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
+                  <i class="bi-check-circle"></i>
+                  In stock
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fs-3 fw-bold lh-1">$380.000</div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-primary me-2 js-addToCart">
+                      <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                    </button>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-secondary" id="addToWishlistDropdown3" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                      <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown3">
+                        <h6 class="dropdown-header">Select wishlist</h6>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-xxl-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="img/Aston.jpg" alt="Product image" class="card-img-top">
+              </div>
+              <div class="card-body position-relative">
+                <h2 class="h4"><a href="product.html" class="stretched-link">DBS Superleggera</a></h2>
+                <div class="text-uppercase fw-bold text-muted mb-1">Aston Martin</div>
+                <p class="mb-3">The Aston Martin DBS Superleggera is a grand touring car produced by British manufacturer Aston Martin since 2018. It's powered by a 5.2-litre twin-turbocharged V12 engine, generating a power output of 725 PS (533 kW; 715 hp). <br> The car is known for its exceptional design, powerful performance, and luxurious interior. It can accelerate from 0–100 km/h (62 mph) in 3.4 seconds, and has a top speed of 340 km/h (211 mph).</p>
+                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
+                  <i class="bi-check-circle"></i>
+                  In stock
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fs-3 fw-bold lh-1">$375.000</div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-primary me-2 js-addToCart">
+                      <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                    </button>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-secondary" id="addToWishlistDropdown4" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                      <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown4">
+                        <h6 class="dropdown-header">Select wishlist</h6>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-xxl-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="img/Mclaren.jpg" alt="Product image" class="card-img-top">
+              </div>
+              <div class="card-body position-relative">
+                <h2 class="h4"><a href="product.html" class="stretched-link">720S</a></h2>
+                <div class="text-uppercase fw-bold text-muted mb-1">McLaren</div>
+                <p class="mb-3">The McLaren 720S is a sports car designed and manufactured by British automobile manufacturer McLaren Automotive. <br> It's powered by a 4.0 L M840T twin-turbocharged V8 engine, generating a power output of 720 PS (530 kW; 710 hp). The 720S can accelerate to 100 km/h (62 mph) in 2.9 seconds, and has a top speed of 341 km/h (212 mph). It's known for its impressive aerodynamics and was launched at the Geneva Motor Show on 7 March 2017.</p>
+                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
+                  <i class="bi-check-circle"></i>
+                  In stock
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fs-3 fw-bold lh-1">$420.000</div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-primary me-2 js-addToCart">
+                      <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                    </button>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-secondary" id="addToWishlistDropdown5" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                      <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown5">
+                        <h6 class="dropdown-header">Select wishlist</h6>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                    
+          <div class="col-md-6 col-xxl-4">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="img/F40.jpg" alt="Product image" class="card-img-top">
+              </div>
+              <div class="card-body position-relative">
+                <h2 class="h4"><a href="product.html" class="stretched-link">F40</a></h2>
+                <div class="text-uppercase fw-bold text-muted mb-1">Ferrari</div>
+                <p class="mb-3">The Ferrari F40 is a mid-engine, rear-wheel drive sports car produced by Ferrari from 1987 to 1992. It was engineered by Nicola Materazzi with styling by Pininfarina. The F40 was powered by a 2.9 L twin-turbocharged V8 engine, generating a power output of 478 PS (352 kW; 471 hp). <br> It was designed to celebrate Ferrari's 40th anniversary and was the last Ferrari automobile personally approved by Enzo Ferrari. At the time of its launch, it was Ferrari's fastest, most powerful, and most expensive car for sale.</p>
+                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-danger">
+                  <i class="bi-x-circle"></i>
+                  Out of stock
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fs-3 fw-bold lh-1">Priceless</div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-primary me-2 js-addToCart" disabled>
+                      <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                    </button>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-secondary" id="addToWishlistDropdown12" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                      <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown12">
+                        <h6 class="dropdown-header">Select wishlist</h6>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                        <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Our team</h2>
+      <p class="mb-5">Behind every great website, there is a great team of people who make it happen.
+       At Bonda Luxury Cars, we are proud to introduce you to our talented and dedicated staff. They are the ones who research, write, design, and edit the content that you see on our site. They are also the ones who answer your questions, respond to your feedback, and keep you updated on the latest news and trends in the exotic sports car world. Our team members come from diverse backgrounds and have different skills and interests, but they all share a common passion for our company and its amazing vehicles. Let's get to know them better.
+      </p>
+      <div class="row gy-3">
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <img src="img/Viper.jpg" class="img-fluid rounded-circle mb-2" alt="Employee image">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="#"><i class="bi-twitter"></i><span class="visually-hidden">Twitter</span></a></li>
+            <li class="list-inline-item"><a href="#"><i class="bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a></li>
+          </ul>
+          <div class="h5">Dr Viper</div>
+          <div>Content creator</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <img src="img/GTR.jpg" class="img-fluid rounded-circle mb-2" alt="Employee image">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="#"><i class="bi-twitter"></i><span class="visually-hidden">Twitter</span></a></li>
+            <li class="list-inline-item"><a href="#"><i class="bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a></li>
+          </ul>
+          <div class="h5">Nissan GTR</div>
+          <div>Web-developer</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <img src="img/Tesla.jpg" class="img-fluid rounded-circle mb-2" alt="Employee image">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="#"><i class="bi-twitter"></i><span class="visually-hidden">Twitter</span></a></li>
+            <li class="list-inline-item"><a href="#"><i class="bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a></li>
+          </ul>
+          <div class="h5">Tesla</div>
+          <div>Marketing Manager</div>
+        </div><div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <img src="img/Macca.jpg" class="img-fluid rounded-circle mb-2" alt="Employee image">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="#"><i class="bi-twitter"></i><span class="visually-hidden">Twitter</span></a></li>
+            <li class="list-inline-item"><a href="#"><i class="bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a></li>
+          </ul>
+          <div class="h5">Macca</div>
+          <div>Graphic-designer</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <img src="img/Merc.jpg" class="img-fluid rounded-circle mb-2" alt="Employee image">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="#"><i class="bi-twitter"></i><span class="visually-hidden">Twitter</span></a></li>
+            <li class="list-inline-item"><a href="#"><i class="bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a></li>
+          </ul>
+          <div class="h5">Mercedes</div>
+          <div>Customer service</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <img src="img/Ferr.jpg" class="img-fluid rounded-circle mb-2" alt="Employee image">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="#"><i class="bi-twitter"></i><span class="visually-hidden">Twitter</span></a></li>
+            <li class="list-inline-item"><a href="#"><i class="bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a></li>
+          </ul>
+          <div class="h5">Ferrarino</div>
+          <div>Editor-in-Chief</div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Where to find us</h2>
+      <div class="ratio" style="--bs-aspect-ratio: 60%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175453420647!2d-73.98784413479707!3d40.748440379327945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire+State+Building%2C+350+5th+Ave%2C+New+York%2C+NY+10118%2C+USA!5e0!3m2!1sda!2sdk!4v1491841211721" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="contact" class="mb-5">
+      <h2 class="text-center mb-4">Send us a message</h2>
+      <form id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Name" required>
+                <p class="valid-feedback">Valid feedback text</p>
+                <p class="invalid-feedback">Invalid feedback text</p>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="example@email.com" required>
+                <p class="valid-feedback">Valid feedback text</p>
+                <p class="invalid-feedback">Invalid feedback text</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="telephone" class="form-label">Telephone:</label>
+                <input type="tel" id="telephone" class="form-control" name="telephone" placeholder="0123456789" required>
+                <p class="valid-feedback">Valid feedback text</p>
+                <p class="invalid-feedback">Invalid feedback text</p>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="department" class="form-label">Department:</label>
+                <select id="department" class="form-select" name="department" aria-describedby="department-help-block" required>
+                  <option hidden value="">Select department</option>
+                  <option value="department-name">Content creator</option>
+                  <option value="department-name">Marketing Manager</option>
+                  <option value="department-name">Customer service</option>
+                </select>
+                <p class="valid-feedback">Valid feedback text</p>
+                <p class="invalid-feedback">Invalid feedback text</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" class="form-control" name="message" rows="5" placeholder="Lorem ipsum dolor sit amet..." required></textarea>
+            <p class="valid-feedback">Valid feedback text</p>
+            <p class="invalid-feedback">Invalid feedback text</p>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-warning" id="contactButton">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <div class="collapse mt-3" id="contactConfirmation">
+          <div class="alert alert-success">
+            <h3 class="alert-heading h4">Message sent!</h3>
+            <p class="mb-0">Thank you very much!</p>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>  
+
+
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Categories</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+        
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>For Business</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">All Brands</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Partner</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+           
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our magazine</h5>            
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-warning" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2024 Bonda Luxury Cars Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
